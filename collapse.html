@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, initial-scale = 1, shrink-to-fit=no">
+	<title>Collapse</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">	
+</head>
+<body>
+
+	<!-- é necessário duas coisas, um disparador e um conteúdo que eu possa esconder -->
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<p>
+					<a class="btn btn-primary" data-toggle="collapse" aria-expended="false" arial-control="itemCollapse1" href="#itemCollapse1">Disparador href</a><!-- disparador 1 -->
+					<button class="btn btn-primary" data-toggle="collapse" type="button" data-target="itemCollapse1" aria-expended="false" arial-control="itemCollapse1">Disparador Button</button><!-- disparador 2 -->
+				</p>
+				<div class="collapse" id="itemCollapse1">
+					<div class="card-body">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien velit, aliquet et convallis faucibus, faucibus a nulla. Proin sagittis turpis justo, vel fermentum metus blandit at. In iaculis quam in euismod cursus. Sed commodo ligula et purus vestibulum vulputate. Quisque sed accumsan lectus, nec eleifend est.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
