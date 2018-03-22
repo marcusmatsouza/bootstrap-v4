@@ -10,6 +10,7 @@
 <body>
 
 	<!-- preciso de um disparador para que o collapse funcione -->
+	<!-- Primeiro collapse são com dois botões mostrando o conteúdo -->
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
@@ -22,6 +23,70 @@
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper metus feugiat velit dapibus rutrum. Vestibulum feugiat mauris enim, sed tempus lacus facilisis in. Cras sem urna, auctor eget arcu in, pharetra placerat nisl. Morbi ac efficitur magna. Donec egestas placerat ipsum quis volutpat. 
 					</div>
 				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Jogando para outros conteúdos -->
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<p>
+				<a href="#itemCollapse02" class="btn btn-primary" data-toggle="collapse" aria-expanded="false" aria-controls="itemCollapse01"> Disparador HREF</a>
+				<button class="btn btn-primary" data-toggle="collapse" type="button" data-target="#itemCollapse03" aria-expanded="false" aria-controls="itemCollapse01">Button</button>
+				</p>
+				<div id="itemCollapse02" class="collapse">
+					<div class="card card-body">
+						<h4>Item 01</h4>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper metus feugiat velit dapibus rutrum. Vestibulum feugiat mauris enim, sed tempus lacus facilisis in. Cras sem urna, auctor eget arcu in, pharetra placerat nisl. Morbi ac efficitur magna. Donec egestas placerat ipsum quis volutpat. 
+					</div>
+					<br>
+					<div id="itemCollapse03" class="collapse">
+					<div class="card card-body">
+						<h4>Item 02</h4>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper metus feugiat velit dapibus rutrum. Vestibulum feugiat mauris enim, sed tempus lacus facilisis in. Cras sem urna, auctor eget arcu in, pharetra placerat nisl. Morbi ac efficitur magna. Donec egestas placerat ipsum quis volutpat. 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- esquema acordeon -->
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				
+				<div id="accordion" role="tablist">
+					<div class="card">
+						<div class="card-header" role="tab" id="header1">
+							<h5 class="mb-0">
+								<a href="#itemCollapse01" data-toggle="collapse" aria-expanded="true" aria-control="itemCollapse01">
+									Link para colapso #1
+								</a>
+							</h5>
+						</div>
+						<div id="itemCollapse01" class="collpase" role="tabpanel" aria-labelledby="header1" data-parent="#accordion">
+							<div class="card-body">
+								<h5>item colapso 1</h5>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper metus feugiat velit dapibus rutrum. Vestibulum feugiat mauris enim, sed tempus lacus facilisis in. Cras sem urna, auctor eget arcu in, pharetra placerat nisl. Morbi ac efficitur magna. Donec egestas placerat ipsum quis volutpat.
+				</div>
+					</div>
+						<div class="card-header" role="tab" id="header2">
+							<h5 class="mb-0">
+								<a href="#itemCollapse02" data-toggle="collapse" aria-expanded="false" aria-control="itemCollapse02">
+									Link para colapso #2
+								</a>
+							</h5>
+						</div>
+						<div id="itemCollapse02" class="collpase" role="tabpanel" aria-labelledby="header2" data-parent="#accordion">
+							<div class="card-body">
+								<h5>item colapso 2</h5>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper metus feugiat velit dapibus rutrum. Vestibulum feugiat mauris enim, sed tempus lacus facilisis in. Cras sem urna, auctor eget arcu in, pharetra placerat nisl. Morbi ac efficitur magna. Donec egestas placerat ipsum quis volutpat.
+							</div>
+						</div>
+					</div>
+				</div>
+				
 			</div>
 		</div>
 	</div>
