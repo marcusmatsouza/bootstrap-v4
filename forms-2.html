@@ -29,7 +29,7 @@
 					<!-- form-group para a senha -->
 					<div class="form-group">
 						<label for="inputSenha1">Senha</label>
-						<input type="password" class="form-control" name="inputSenha1" id="inputSenha1" placeholder="insira sua senha">
+						<input type="password" class="form-control" name="inputSenha1" id="inputSenha1" placeholder="insira sua senha" readonly>
 					</div>
 					<!-- inserindo um chekcbox -->
 					<div class="form-chack">
@@ -42,6 +42,51 @@
 				</form>
 			</div>
 		</div>
+		<!-- customização dos tamanhos e estilos do formulários -->
+		<div class="row">
+			<div class="col-6">
+				<input type="text" name="" class="form-control form-control-lg">
+				<input type="text" name="" class="form-control">
+				<input type="text" name="" class="form-control form-control-sm">
+			</div>
+		</div>
+			<!-- aqui temos um formulário inline -->
+		<div class="row">
+				<div class="col-12">
+					<form >
+						<div class="form-group row">
+							<label for="inputEmail2" class="col-sm-2 col-form-label">E-mail</label>
+							<div class="col-sm-10">
+								<input type="email" class="form-control-plaintext" name="inputEmail2" id="inputEmail2" placeholder="insira seu email" value="meuemail@meudominio.com.br" readonly>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="inputSenha2" class="col-sm-2 col-form-label">Senha</label>
+							<div class="col-sm-10">
+								<input type="password" class="form-control" name="inputSenha2" id="inputSenha2" placeholder="insira sua senha">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		<!-- formulario com sistema de grid dentro dele -->	
+			<div class="row">
+				<div class="col-12">
+					<form>
+						<div class="row">
+							<div class="col">
+								<input type="text" class="form-control" placeholder="primeiro nome">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<input type="text" class="form-control" placeholder="Segundo nome">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+	
 	</div>
 				
 
