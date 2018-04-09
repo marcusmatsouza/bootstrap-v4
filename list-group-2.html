@@ -62,10 +62,12 @@
 					</div><!-- list group -->
 				</div><!-- colunas -->
 			</div><!-- Row -->
+			
 			<div class="row"><!-- nova row -->
 				<div class="col-3">
 						<div class="list-group" id="list-tab" role="tablist">
 							<a href="#list-home" class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" role="tab" aria-control="home">HOME</a>
+							<a href="#list-perfil" class="list-group-item list-group-item-action " id="list-perfil-list" data-toggle="list" role="tab" aria-control="perfil">Perfil</a>
 						</div>
 					</div>
 					<div class="col-9">
@@ -80,6 +82,44 @@
 								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 								</p>
 							</div>
+
+							<div id="list-pefil" class="tab-pane fade" role="tab-panel" aria-labelledby="list-perfil-list">
+								<h3>Perfil</h3>
+								<p> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+
+							<!--aqui posso adicionar mais sessões que irá dar na mesma -->
+
+							<div id="list-contato" class="tab-pane fade" role="tab-panel" aria-labelledby="list-contato-list">
+								<h3>Contato</h3>
+								<form>
+									<div class="form-group">
+										<label for="nome">Nome</label>
+										<input type="text" name="nome" id="nome" class="form-control" placeholder="digite seu nome">
+									</div>
+									<div class="form-group">
+										<label for="assunto">Assunto
+										</label>
+										<input type="text" name="Assunto" id="assunto" class="form-control" placeholder="digite o assunto">
+									</div>
+									<div class="form-group">
+										<label for="assunto">Conteúdo
+										</label>
+										<textarea class="form-group" id="conteudo">	
+										</textarea>
+									</div>
+									<button class="btn btn-primary">
+										enviar
+									</button>
+								</form>
+							</div>
+
 						</div>
 					</div>
 			</div>
