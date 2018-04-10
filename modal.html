@@ -9,10 +9,36 @@
 </head>
 <body>
 
+	<!-- chamar atenção do usuário para algum conteúdo -->
+	<!-- pode ser definido por sempre aparecendo ou por disparador -->
 	<div class="container">
+		<!-- modal sempre aparecendo -->
 		<div class="row">
 			<div class="col-12">
-				
+				<!-- disparador para o modal -->
+
+				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-exemplo-1">Disparador do modal
+				</button>
+
+				<div id="modal-exemplo-1" class="modal">
+					<div class="modal-dialogue" role="document">
+						<div class="modal-content">
+							<div class="modal-header"><!-- header -->
+								<h5 class="modal-title">Título do meu modal</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+									<span aria-hiddden="true">&times;</span>
+								</button>
+							</div><!-- fim do header -->
+							<div class="modal-body"><!-- body -->
+								<p>Corpo do meu modal</p>
+							</div><!-- fim do body -->
+							<div class="modal-footer"><!-- footer -->
+								<button type="button" class="btn btn-primary">Salvar</button>
+								<button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+							</div><!-- fim do footer -->
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -26,6 +52,10 @@
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- modal -->
+    <script type="text/javascript">
+    //	$('.modal').modal('show');
+    </script>
 	
 </body>
 </html>
