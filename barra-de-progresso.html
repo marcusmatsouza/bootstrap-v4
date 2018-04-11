@@ -5,14 +5,47 @@
 	<meta name="viewport" content="width-device-width, initial-scale = 1, shrink-to-fit=no">
 	<title>Barra de progresso</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+		.row {
+			margin-bottom: 10px;
+		}
+	</style>	
 </head>
 <body>
 
 	<div class="container"><!-- CONTAINER -->
 		<div class="row"><!-- ROW -->
 			<div class="col-12"><!-- 12 COLUNAS -->
-				
+				<div class="progress mb-2"> 
+					<div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+						
+					</div>
+				</div>
+				<div class="progress mb-2"> 
+					<div class="progress-bar-striped progress-bar-animated w-25 bg-success" role="progressbar" aria-valuenow="25" aria-valuemin="25" aria-valuemax="100">
+						25%
+					</div>
+				</div>
+				<div class="progress mb-2"> 
+					<div class="progress-bar-striped progress-bar-animated w-50 bg-primary" role="progressbar" aria-valuenow="50" aria-valuemin="25" aria-valuemax="100">
+						50%
+					</div>
+				</div>
+				<div class="progress mb-2"> 
+					<div class="progress-bar-striped progress-bar-animated w-75 bg-danger" role="progressbar" aria-valuenow="75" aria-valuemin="25" aria-valuemax="100">
+						75%
+					</div>
+				</div>
+				<!-- barra com duas cores preenchidas -->
+				<div class="progress mb-2"> 
+					<div class="progress-bar w-25 bg-success" role="progressbar" aria-valuenow="25" aria-valuemin="25" aria-valuemax="100">
+						25%
+					</div>
+					<div class="progress-bar w-75 bg-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+						75%
+					</div>
+				</div>
 			</div><!-- /12 COLUNAS -->
 		</div><!-- /ROW -->
 	</div><!-- /CONTAINER -->
