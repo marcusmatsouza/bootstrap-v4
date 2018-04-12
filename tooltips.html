@@ -17,8 +17,21 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				
-				
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec ante suscipit, pharetra dolor id, finibus ex. Nunc tempus quam a urna blandit, ac maximus urna accumsan. Proin volutpat condimentum magna eget mattis. Suspendisse ac urna commodo, pretium sapien quis, tristique sem. In hac habitasse platea dictumst. Nulla mattis vehicula metus sit amet sollicitudin. Nunc volutpat tortor vitae nunc condimentum tincidunt.
+					</p>
+				<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip no topo">
+					Topo
+				</button><!--/BUTTON -->
+				<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip na direita">
+					Direita
+				</button><!-- /BUTTON -->
+				<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip na esquerda">
+					Esquerda
+				</button><!-- /BUTTON -->
+				<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip em baixo">
+					Baixo
+				</button><!-- /BUTTON -->
 			</div><!-- / COLUNA -->
 		</div><!-- /LINHA -->
 	</div><!-- CONTAINER -- >
@@ -28,7 +41,12 @@
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    
+    <!-- Chamando blibioteca do popper -->
+    <script type="text/javascript">
+    	$(function(){
+    		$('[data-toggle="tooltip"]').tooltip()
+    	});
+    </script>
 	
 </body>
 </html>
