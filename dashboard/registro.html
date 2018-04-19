@@ -15,29 +15,51 @@
 <body class="bg-dark">
 
 <div class="container">
-	<div class="card card-login mx-auto mt-5">
+	<div class="card card-register mx-auto mt-5">
 		<div class="card-header">
-			Recuperar senha
+			Criar uma senha
 		</div>
 		<div class="card-body">
-
-			<div class="text-center mt-4 mb-5">
-				<h4>Esqueceu sua senha</h4>
-				<p>Digite seu e-mail e nós lhe enviaremos instruções como recuperar sua senha</p>	
-			</div>
-
+			
 			<form>
+				
 				<div class="form-group">
-					<label for="email">E-mail:</label>
-					<input class="form-control" type="email" name="email" id="email" placeholder="digite seu email">
-				</div>
+					<div class="form-row">
+						<div class="col-md-6">
+							<label for="primeiroNome">Primeiro nome</label>
+							<input class="form-control" id="primeiroNome" type="text" name="primeiroNome" placeholder="digite seu primeiro nome">
+						</div>
+						<div class="col-md-6">
+							<label for="sobrenome">Sobrenome</label>
+							<input class="form-control" id="sobrenome" type="text" name="sobrenome" placeholder="digite seu sobrenome">
+						</div>
+					</div>
+				</div><!-- /FORM GROUP 1 -->
+				
+				<div class="form-group">
+							<label for="primeiroNome">E-mail</label>
+							<input class="form-control" id="email" type="text" name="email" placeholder="digite seu e-mail">
+				</div><!-- /FORM GROUP 2 -->
 
-				<button class="btn btn-primary btn-block">Recuperar senha</button>
+				<div class="form-group">
+					<div class="form-row">
+						<div class="col-md-6">
+							<label for="senha">Senha</label>
+							<input class="form-control" id="senha" type="password" name="senha" placeholder="digite sua senha">
+						</div>
+						<div class="col-md-6">
+							<label for="confirmaSenha">Confirme sua senha</label>
+							<input class="form-control" id="confirmaSenha" type="password" name="confirmaSenha" placeholder="confirme sua senha">
+						</div>
+					</div>
+				</div><!-- /FORM GROUP 3 -->
+				
+				<button class="btn btn-primary btn-block">Registrar-se</button>
 				<div class="text-center">
-					<a href="#" class="d-block small mt-3">Criar uma conta</a>
+					<a href="#" class="d-block small mt-3">Esqueceu a senha?</a>
 					<a href="#" class="d-block small">Página de login</a>
 				</div>
-			</form>
+			</form><!-- /FORMULARIO -->
 
 		</div> <!-- CARD BODY -->
 	</div> <!-- CARD -->
